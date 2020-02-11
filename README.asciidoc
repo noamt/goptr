@@ -1,0 +1,21 @@
+= goptr
+
+A utility package for Go pointers
+
+== Pointer Resolution
+
+In this package there are helper methods for resolving pointers of primitive types, with a fallback to a default value.
+
+For example, resolving a pointer to a string:
+[source,go]
+----
+import "github.com/noamt/goptr"
+
+goptr.String(nil) // Returns an empty string
+goptr.String("foo") // Returns "foo"
+
+goptr.StringOrDefault(nil, "foo") // Returns "foo"
+
+s := "bar"
+goptr.StringOrDefault(&s, "foo") // Returns "bar"
+----
