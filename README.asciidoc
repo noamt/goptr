@@ -1,5 +1,7 @@
 = goptr
 
+image:https://circleci.com/gh/noamt/goptr.svg?style=svg["CircleCI", link="https://circleci.com/gh/noamt/goptr"]
+
 A utility package for Go pointers
 
 == Pointer Resolution
